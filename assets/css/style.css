@@ -1,0 +1,169 @@
+/* 设置自定义背景[颜色/图片] */
+html::before {
+  background-image: url(http://p5.qhimg.com/bdm/2560_1600_100/t012387ebed588f2b55.jpg);
+  content: '';
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center 0;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+::-webkit-scrollbar-thumb {
+  background: #3a3a3a;
+  border-radius: 15px;
+}
+.uk-border-rounded {
+  border-radius: 15px;
+}
+.uk-border-img {
+  border-radius: 15px 15px 0 0;
+}
+.uk-badge-2 {
+  height: 30px;
+  padding: 0 15px;
+}
+.uk-search-large .uk-search-input {
+  height: 80px;
+  background: 0 0;
+  font-size: 1.625rem;
+}
+.slide-caption {
+  position: absolute;
+  right: 0px;
+  padding: 1rem;
+  font-size: 1.5rem;
+  margin-right: 20px;
+  bottom: 40px;
+  z-index: 1;
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.75);
+}
+/*
+loading
+*/
+.loader-1 {
+  background: #363B40;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 99999;
+}
+.loader {
+  position: relative;
+  width: 2.5em;
+  height: 2.5em;
+  transform: rotate(165deg);
+}
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 0.25em;
+  transform: translate(-50%, -50%);
+}
+.loader:before {
+  animation: before 2s infinite;
+}
+.loader:after {
+  animation: after 2s infinite;
+}
+@keyframes before {
+  0% {
+    width: 0.5em;
+    box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75), -1em 0.5em rgba(111, 202, 220, 0.75);
+  }
+  35% {
+    width: 2.5em;
+    box-shadow: 0 -0.5em rgba(225, 20, 98, 0.75), 0 0.5em rgba(111, 202, 220, 0.75);
+  }
+  70% {
+    width: 0.5em;
+    box-shadow: -1em -0.5em rgba(225, 20, 98, 0.75), 1em 0.5em rgba(111, 202, 220, 0.75);
+  }
+  100% {
+    box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75), -1em 0.5em rgba(111, 202, 220, 0.75);
+  }
+}
+@keyframes after {
+  0% {
+    height: 0.5em;
+    box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75), -0.5em -1em rgba(233, 169, 32, 0.75);
+  }
+  35% {
+    height: 2.5em;
+    box-shadow: 0.5em 0 rgba(61, 184, 143, 0.75), -0.5em 0 rgba(233, 169, 32, 0.75);
+  }
+  70% {
+    height: 0.5em;
+    box-shadow: 0.5em -1em rgba(61, 184, 143, 0.75), -0.5em 1em rgba(233, 169, 32, 0.75);
+  }
+  100% {
+    box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75), -0.5em -1em rgba(233, 169, 32, 0.75);
+  }
+}
+/**
+ * Attempt to center the whole thing!
+ */
+.loader {
+  position: absolute;
+  top: calc(50% - 1.25em);
+  left: calc(50% - 1.25em);
+}
+/*# sourceMappingURL=loading.css.map */
+/**
+ * 黑暗模式
+ */
+.uk-light .tm-navbar-container:not(.uk-navbar-transparent) {
+  background: #363B40;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09) !important;
+}
+.uk-light .uk-modal-dialog {
+  background-color: #363B40;
+}
+.uk-light .uk-modal-close-full {
+  background-color: #363B40;
+}
+.uk-light .uk-offcanvas-bar {
+  background-color: #363B40;
+}
+.uk-light .uk-card-default {
+  background-color: #363B40;
+  color: #fff;
+}
+.uk-light .uk-label {
+  background-color: #282828;
+  color: #fff;
+}
+.uk-light .loader-1 {
+  background: #363B40;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 99999;
+}
+.uk-dark .tm-navbar-container:not(.uk-navbar-transparent) {
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09) !important;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/uikit/css/uikit.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>主页</title>
+</head>
+<body class="uk-light">
+<!--navbar-->
+<div class="loader-1">
+    <div class="loader">
+    </div>
+</div>
+
+<div class="uk-navbar-container tm-navbar-container" uk-sticky="position: top">
+
+    <div class="uk-container uk-container-expand">
+
+        <nav class="uk-navbar">
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-toggle uk-hidden@m" uk-toggle="target: #sidebar" uk-navbar-toggle-icon href="#"></a>
+                <div class="uk-navbar-item">
+                    <a class="uk-logo" href="">
+                        <img src="assets/img/logo-dark.svg" uk-svg alt="">
+                        <img class="uk-logo-inverse" src="assets/img/logo-light.svg" uk-svg alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="uk-navbar-center uk-visible@m">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-navbar-item uk-active">
+                        <a class="uk-button-text uk-text-bold">首页</a>
+                    </li>
+                    <li class="uk-navbar-item">
+                        <a class="uk-button-text uk-text-bold">文章</a>
+                    </li>
+                    <li class="uk-navbar-item">
+                        <a class="uk-button-text uk-text-bold">友人帐</a>
+                    </li>
+                    <li class="uk-navbar-item">
+                        <a class="uk-button-text uk-text-bold">关于我</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+
+                    <li class="uk-navbar-item">
+                        <a id="star" uk-icon="sunset"></a>
+                        <a class="uk-navbar-toggle" href="#modal-full" uk-icon="search" uk-toggle></a>
+                    </li>
+
+                    <li class="uk-navbar-item  uk-visible@l">
+                        <button class="uk-button uk-button-default">登录</button>
+                    </li>
+                    <li class="uk-navbar-item  uk-visible@l">
+                        <div class="uk-width-auto">
+                            <img class="uk-border-circle" width="40" height="40"
+                                 src="https://q1.qlogo.cn/g?b=qq&nk=2172307677&src_uin=www.jlwz.cn&s=0" alt="">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--        搜索框-->
+        <div id="modal-full" class="uk-modal-full uk-modal" uk-modal>
+            <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+                <button class="uk-modal-close-full" type="button" uk-close></button>
+                <form class="uk-search uk-search-large">
+                    <label>
+                        <input class="uk-search-input uk-text-center" type="search" placeholder="搜索一下···">
+                    </label>
+                </form>
+            </div>
+        </div>
+        <div id="sidebar" uk-offcanvas="overlay: true">
+            <div class="uk-offcanvas-bar">
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+                <div class="uk-width-auto">
+                    <img class="uk-border-circle"
+                         width="50" height="50"
+                         src="https://q1.qlogo.cn/g?b=qq&nk=2172307677&src_uin=www.jlwz.cn&s=0">
+                </div>
+                <h3 class="uk-text-bolder">刘铭熙·</h3>
+                <p class="uk-text-bold">命里有时终须有，命里无时莫强求</p>
+                <ul class="uk-iconnav">
+                    <li><a href="#" uk-icon="icon: github"></a></li>
+                    <li><a href="#" uk-icon="icon: twitter"></a></li>
+                    <li><a href="#" uk-icon="icon: tiktok"></a></li>
+                </ul>
+
+                <ul class="uk-nav uk-margin-top uk-nav-parent-icon  uk-nav-default" uk-nav="multiple: true">
+                    <li class="uk-active"><a href="#">首页</a></li>
+                    <li><a href="#">文章</a></li>
+                    <li class="uk-parent">
+                        <a href="#">分类</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">友人帐</a></li>
+                    <li><a href="#">关于我</a></li>
+                </ul>
+                <div class=" uk-text-center ">
+                    <div class="uk-flex uk-flex-center uk-grid-small uk-margin-bottom" uk-grid>
+                        <div>
+                            <p class="uk-margin-remove-bottom">19</p>
+                            <small class="uk-margin-remove-top">文章数</small>
+                        </div>
+                        <div>
+                            <p class="uk-margin-remove-bottom">9</p>
+                            <small class="uk-margin-remove-top">评论数</small>
+                        </div>
+                        <div>
+                            <p class="uk-margin-remove-bottom">0</p>
+                            <small class="uk-margin-remove-top">分类</small>
+                        </div>
+                    </div>
+                    <small>Copyright © 2019 yun. All rights reserved.</small>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="uk-container">
+    <div class="uk-container-expand uk-margin-top uk-grid-medium" uk-grid>
+        <div class="uk-width-3-4@l">
+            <div class="uk-card uk-card-default uk-border-rounded">
+                <div class="uk-card-media-top uk-light">
+                    <div class="uk-position-relative uk-visible-toggle" tabindex="-1"
+                         uk-slideshow="animation: push;autoplay: true;autoplay-interval: 3000;.uk-border-rounded">
+
+                        <ul class="uk-slideshow-items uk-border-img">
+                            <li>
+                                <img src="http://p4.qhimg.com/bdm/2560_1600_100/t016b87c2780df68c90.jpg" alt=""
+                                     uk-cover>
+                                <div class="uk-position-center uk-position-small uk-text-center">
+                                    <h2 uk-slideshow-parallax="x: 100,-100">Heading</h2>
+                                    <p uk-slideshow-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="http://p4.qhimg.com/bdm/2560_1600_100/t015b4d2e1b681ad032.jpg" alt=""
+                                     uk-cover>
+                                <div class="uk-position-center uk-position-small uk-text-center">
+                                    <h2 uk-slideshow-parallax="x: 100,-100">Heading</h2>
+                                    <p uk-slideshow-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="http://p6.qhimg.com/bdm/2560_1600_100/t01c5fc4badee344a9c.jpg" alt=""
+                                     uk-cover>
+                                <div class="uk-position-center uk-position-small uk-text-center">
+                                    <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">Heading</h2>
+                                    <p uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0">Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#"
+                           uk-icon="chevron-left" uk-slideshow-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#"
+                           uk-icon="chevron-right" uk-slideshow-item="next"></a>
+
+                    </div>
+
+                </div>
+                <div class="uk-card-body">
+                    <p>
+                        日坠尘芳 杯觥交错
+                        新愁旧憾 与我何干
+                        逢场作戏 若即若离
+                        终究是客 谁诉南柯
+                        轻烟飘过
+                        似同窃语敲打我的窗
+                        可曾是你 捎来的问安
+                        粗茶一盏
+                        谁在乎人间碎银几两
+                        纸短情长 断了离殇
+                        若是把盏尽欢酩酊能忘掉喜悲
+                        又何必为俗情如癫如梦如痴如醉
+                        若是看尽世间冷暖即烟消云散
+                        又何需为爱恨一意孤行挂肚牵肠
+                        轻烟飘过
+                        似同窃语敲打我的窗
+                        可曾是你 捎来的问安
+                        粗茶一盏
+                        谁在乎人间碎银几两
+                        纸短情长 断了离殇
+                        Wu...
+                        Wu...
+                        轻烟飘过
+                        似同窃语敲打我的窗
+                        可曾是你 捎来的问安
+                        粗茶一盏
+                        谁在乎人间碎银几两
+                        纸短情长 断了离殇
+                    </p>
+                    <a href="#" class="uk-button uk-button-text"> --来自网易云音乐《画》</a>
+                </div>
+            </div>
+        </div>
+        <div class="uk-width-1-4@m uk-visible@l">
+            <div class="uk-card uk-card-small uk-card-default uk-border-rounded">
+                <div class="uk-card-body uk-text-center">
+                    <div class="uk-width-auto uk-margin">
+                        <img class="uk-border-circle" width="50" height="50"
+                             src="https://q1.qlogo.cn/g?b=qq&nk=2172307677&src_uin=www.jlwz.cn&s=0">
+                    </div>
+                    <div class="uk-width-expand">
+                        <h4 class="uk-text-bold">刘铭熙</h4>
+                        <p class="uk-text-meta">命里有时终须有，命里无时莫强求</p>
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-grid-small" uk-grid>
+                        <div><a href="" class="uk-icon-button" uk-icon="twitter"></a></div>
+                        <div><a href="" class="uk-icon-button" uk-icon="facebook"></a></div>
+                        <div><a href="" class="uk-icon-button" uk-icon="youtube"></a></div>
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-grid-small uk-text-center" uk-grid>
+                        <div>
+                            <p class="uk-margin-remove-bottom">19</p>
+                            <small class="uk-margin-remove-top">文章数</small>
+                        </div>
+                        <div>
+                            <p class="uk-margin-remove-bottom">9</p>
+                            <small class="uk-margin-remove-top">评论数</small>
+                        </div>
+                        <div>
+                            <p class="uk-margin-remove-bottom">0</p>
+                            <small class="uk-margin-remove-top">分类</small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="uk-card uk-card-small uk-card-default uk-border-rounded uk-margin-top">
+                <div class="uk-height-small uk-cover-container uk-border-img">
+                    <img class="uk-object-cover" src="http://p5.qhimg.com/bdm/2560_1600_100/t0118bb0aeb1217fc42.jpg"
+                         alt="Alt img" uk-cover>
+                    <div class="uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-bottom uk-flex-middle uk-text-center">
+                        <div data-uk-scrollspy="cls: uk-animation-slide-bottom-small">
+                            <small>标签云</small>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card-body uk-text-center">
+
+                    <span class="uk-label">typecho</span>
+
+                    <span class="uk-label uk-label-success">岁月</span>
+
+                    <span class="uk-label uk-label-warning">Warning</span>
+
+                    <span class="uk-label uk-label-danger">Danger</span>
+                    <span class="uk-label">Default</span>
+
+                    <span class="uk-label uk-label-success">Success</span>
+
+                    <span class="uk-label uk-label-warning">Warning</span>
+
+                    <span class="uk-label uk-label-danger">Danger</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="uk-container">
+    <div class="uk-container-expand uk-margin-top" uk-grid="">
+        <div class="uk-width-3-4@m ">
+            <div class="uk-card uk-card-default uk-border-rounded">
+                <div class="uk-height-large uk-cover-container uk-border-rounded">
+                    <img src="https://picsum.photos/1300/500/?random" alt="Alt img" uk-cover>
+                    <div class="uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-center uk-flex-middle uk-text-center">
+                        <div data-uk-scrollspy="cls: uk-animation-slide-bottom-small">
+                            <small>FEATURED ARTICLE</small>
+                            <h3 class="uk-margin-top uk-margin-small-bottom uk-margin-remove-adjacent">书写自己的篇章</h3>
+                            <p>何为世间锦秀词，我与明月两不知.</p>
+                            <a href="#" class="uk-button uk-button-default uk-margin-top">GO TO ARTICLE</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="uk-container">
+    <div class="uk-container-expand uk-margin-top uk-margin-bottom" uk-grid>
+        <div class="uk-width-1-1@m ">
+            <div class="uk-card uk-card-default uk-border-rounded">
+                <div class="uk-card-body">
+                    <div class="uk-grid-medium" uk-grid="">
+                        <div class="uk-width-1-3@m">
+                            <ul class="uk-nav uk-nav-default">
+                                <li class="uk-nav-header">热门文章</li>
+                                <li><a href="#">Typora 的 Markdown 语法</a></li>
+                                <li><a href="#">记：flarum论坛搭建教程</a></li>
+                                <li><a href="#">记：vuejs安装</a></li>
+                                <li><a href="#">记-宝塔搭建gitlab流水线php自动化部署的使用</a></li>
+                            </ul>
+                        </div>
+                        <div class="uk-width-1-3@m">
+                            <ul class="uk-nav uk-nav-default">
+                                <li class="uk-nav-header">站长推荐</li>
+                                <li><a href="#">个人博客如何添加第三方评论插件——畅言</a></li>
+                                <li><a href="#">个人博客网站首页被篡改怎么办？</a></li>
+                                <li><a href="#">HTML响应式简约个人博客模板《小传》</a></li>
+                                <li><a href="#">网页前端设计快速入门技巧</a></li>
+                            </ul>
+                        </div>
+                        <div class="uk-width-1-3@m">
+                            <div class="uk-flex uk-flex-middle uk-grid-small uk-text-center">
+                                <div class="uk-flex-column">
+                                    <img src="assets/img/qrcode.jpg" height="100" width="100" alt="">
+                                    <br>
+                                    <small>微信公众号</small>
+                                </div>
+                                <div class="uk-flex-column">
+                                    <img src="assets/img/qrcode.jpg" height="100" width="100" alt="">
+                                    <br>
+                                    <small>微信小程序</small>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="uk-grid-medium" uk-grid="">
+                        <div class="uk-width-1-2@m">
+                            <ul class="uk-iconnav">
+                                <li><a href="#" uk-icon="icon: github"></a></li>
+                                <li><a href="#" uk-icon="icon: twitter"></a></li>
+                                <li><a href="#" uk-icon="icon: tiktok"></a></li>
+                            </ul>
+                        </div>
+                        <div class="uk-width-1-2@m">
+                            <div class="uk-panel uk-text-meta uk-margin uk-text-left">
+                                ©
+                                <script>
+                                    document.currentScript.insertAdjacentHTML('afterend', '<time datetime="' + new Date().toJSON() + '">' + new Intl.DateTimeFormat(document.documentElement.lang, {year: 'numeric'}).format() + '</time>');
+                                </script>
+                                流年子熙. All rights reserved.<br class="uk-hidden@s"> Powered by <a class="uk-link-muted"
+                                                                                                 href="">
+                                Liu Mingxi
+                            </a>.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/uikit/js/uikit.min.js"></script>
+<script src="assets/uikit/js/uikit-icons.min.js"></script>
+<script>
+    $(document).ready(function () {
+        setTimeout(function () {
+            $(".loader-1").remove();
+        }, 3500);
+    }, 3000);
+    $("#star").click(function () {
+        const body = $('body');
+        if (body.hasClass("uk-light")) {
+            body.removeClass("uk-light").addClass("uk-dark");
+            $("#star").attr("uk-icon", "sunset");
+        } else {
+            body.removeClass("uk-dark").addClass("uk-light");
+            $("#star").attr("uk-icon", "sunrise");
+        }
+    });
+</script>
+</body>
+</html>
