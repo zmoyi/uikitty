@@ -28,6 +28,9 @@ html::before {
 .uk-border-img {
   border-radius: 15px 15px 0 0;
 }
+.border-overlay {
+  border-radius: 0 0 15px 15px;
+}
 .uk-badge-2 {
   height: 30px;
   padding: 0 15px;
@@ -39,7 +42,7 @@ html::before {
 }
 .slide-caption {
   position: absolute;
-  right: 0px;
+  right: 0;
   padding: 1rem;
   font-size: 1.5rem;
   margin-right: 20px;
@@ -162,6 +165,13 @@ loading
   top: 0;
   z-index: 99999;
 }
+.uk-light .uk-comment-primary {
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+/*
+明亮模式
+*/
 .uk-dark .tm-navbar-container:not(.uk-navbar-transparent) {
   background: rgba(255, 255, 255, 0.88);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.09) !important;
