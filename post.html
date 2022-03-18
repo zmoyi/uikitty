@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/uikit/css/uikit.min.css">
+    <link rel="stylesheet" href="assets/highlight/styles/github-dark-dimmed.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>post</title>
 </head>
@@ -176,7 +177,7 @@
 
                     </div>
                 </div>
-                <div class="uk-card-body">
+                <div class="uk-card-body" uk-lightbox="animation:fade">
                     <p class="uk-article-meta">Written by <a href="#">Super User</a> on 12 April 2012. Posted in <a
                             href="#">Blog</a></p>
                     <div class="uk-container-expand">
@@ -190,7 +191,10 @@
                             turpis egestas. Etiam interdum magna sapien, id suscipit diam consectetur at. Cras sapien
                             ante, tempor a diam a, faucibus rhoncus nisl. Sed volutpat, dolor vitae aliquam ultricies,
                             arcu ex lobortis tellus, non placerat nulla lacus eu libero. </p>
-
+                        <pre><code>// Code example
+&lt;div id="myid" class="myclass" hidden&gt;
+    Lorem ipsum &lt;strong&gt;dolor&lt;/strong&gt; sit amet, consectetur adipiscing elit.
+&lt;/div&gt;</code></pre>
                         <p>Duis aliquam pellentesque massa in pharetra. Morbi a auctor urna. Fusce tincidunt dui vitae
                             dignissim malesuada. Nunc vulputate turpis quis tellus mattis efficitur. Etiam ultricies
                             orci commodo purus consectetur lacinia a laoreet augue. Maecenas mattis malesuada mauris ut
@@ -296,7 +300,8 @@
                                             </article>
                                         </li>
                                         <li>
-                                            <article class="uk-comment uk-comment-primary uk-visible-toggle" tabindex="-1">
+                                            <article class="uk-comment uk-comment-primary uk-visible-toggle"
+                                                     tabindex="-1">
                                                 <header class="uk-comment-header uk-position-relative">
                                                     <div class="uk-grid-medium uk-flex-middle" uk-grid>
                                                         <div class="uk-width-auto">
@@ -544,6 +549,11 @@
 <script src="assets/js/jquery-3.6.0.min.js"></script>
 <script src="assets/uikit/js/uikit.min.js"></script>
 <script src="assets/uikit/js/uikit-icons.min.js"></script>
+<script src="assets/highlight/highlight.min.js"></script>
+
+<script>
+    hljs.highlightAll();
+</script>
 <script>
     $(document).ready(function () {
         setTimeout(function () {

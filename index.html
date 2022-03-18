@@ -83,7 +83,7 @@
                 <div class="uk-width-auto">
                     <img class="uk-border-circle"
                          width="50" height="50"
-                         src="https://q1.qlogo.cn/g?b=qq&nk=2172307677&src_uin=www.jlwz.cn&s=0">
+                         src="https://q1.qlogo.cn/g?b=qq&nk=2172307677&src_uin=www.jlwz.cn&s=0" alt="">
                 </div>
                 <h3 class="uk-text-bolder">刘铭熙·</h3>
                 <p class="uk-text-bold">命里有时终须有，命里无时莫强求</p>
@@ -214,7 +214,7 @@
                 <div class="uk-card-body uk-text-center">
                     <div class="uk-width-auto uk-margin">
                         <img class="uk-border-circle" width="50" height="50"
-                             src="https://q1.qlogo.cn/g?b=qq&nk=2172307677&src_uin=www.jlwz.cn&s=0">
+                             src="https://q1.qlogo.cn/g?b=qq&nk=2172307677&src_uin=www.jlwz.cn&s=0" alt="">
                     </div>
                     <div class="uk-width-expand">
                         <h4 class="uk-text-bold">刘铭熙</h4>
@@ -345,14 +345,21 @@
                                 <li><a href="#" uk-icon="icon: twitter"></a></li>
                                 <li><a href="#" uk-icon="icon: tiktok"></a></li>
                             </ul>
+                            <ul class="uk-nav uk-nav-default">
+                                <li><a href="#">陕ICP备19021196号-2</a></li>
+                            </ul>
+
+
+
+
                         </div>
                         <div class="uk-width-1-2@m">
                             <div class="uk-panel uk-text-meta uk-margin uk-text-left">
-                                ©
+                                 ©
                                 <script>
                                     document.currentScript.insertAdjacentHTML('afterend', '<time datetime="' + new Date().toJSON() + '">' + new Intl.DateTimeFormat(document.documentElement.lang, {year: 'numeric'}).format() + '</time>');
                                 </script>
-                                流年子熙. All rights reserved.<br class="uk-hidden@s"> Powered by <a class="uk-link-muted"
+                                流年子熙. <br>All rights reserved.<br class="uk-hidden@s"> Powered by <a class="uk-link-muted"
                                                                                                  href="">
                                 Liu Mingxi
                             </a>.
@@ -375,8 +382,9 @@
     $(document).ready(function () {
         setTimeout(function () {
             $(".loader-1").remove();
-        }, 3500);
+        }, 1);
     });
+
     $("#star").click(function () {
         const body = $('body');
         if (body.hasClass("uk-light")) {
